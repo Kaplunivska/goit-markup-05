@@ -26,7 +26,7 @@
         <nav class="header-nav">
           <ul class="site-nav list">
             <li class="list-item">
-              <a class="header-link nav-link " href="./index.html">Студія</a>
+              <a class="header-link nav-link current" href="./index.html">Студія</a>
             </li>
             <li class="list-item">
               <a class="header-link nav-link" href="./portfolio.html">Портфоліо</a>
@@ -60,7 +60,7 @@
       <section class="hero">
         <div class="hero-box">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="service">Замовити послугу</button>
+          <button type="button" class="service" data-modal-open>Замовити послугу</button>
         </div>
       </section>
 
@@ -126,36 +126,45 @@
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="list function">
-            <li class="function-img">
-            <div class="img-overlay">
-            <ul class="list function">
-            <li class="function-img">
+            <li>
+             <div class="function-img">
               <img
                 src="images/img.jpg"
                 alt="Програміст працює на ноутбуці"
                 width="370"
                 height="294"
               />
-              <div class="overlay-wrapp">
+               <div class="about-description">
                 <p>Десктопні додатки</p>
               </div>
-            </div>
+              </div>
+                </li>
             </li>
-            <li class="function-img">
+            <li>
+              <div class="function-img">
               <img
                 src="images/img2.jpg"
                 alt="Дизайнери розробляють додатки для смартфонів"
                 width="370"
                 height="294"
               />
+              <div class="about-description">
+                <p>Мобільні додатки</p>
+              </div>
+              </div>
             </li>
-            <li class="function-img">
+            <li>
+             <div class="function-img">
               <img
                 src="images/img3.jpg"
                 alt="Дизайнер працює над кольором"
                 width="370"
                 height="294"
               />
+              <div class="about-description">
+                <p>Дизайнерські рішення</p>
+              </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -591,5 +600,18 @@
         </div>
       </div>
     </footer>
+
+    <!-- Модальне вікно -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="btn-close" aria-label="Закрити" data-modal-close>
+          <svg class="icon-close" width="11" height="11">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
